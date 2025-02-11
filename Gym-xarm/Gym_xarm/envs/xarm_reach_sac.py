@@ -340,7 +340,7 @@ class XarmReachSacEnv(gym.GoalEnv):
     # ----------------------------------------------------------------------------------
     def compute_reward(self, action, achieved_goal, observation, goal, info):
         self.c1 = 500
-        self.c2 = 0
+        self.c2 = 2
         self.c3 = 10
         d = np.linalg.norm(achieved_goal - goal, axis=-1)
 
